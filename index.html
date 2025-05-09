@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfólio profissional de Matheus Rocha destacando habilidades em Administração de Materiais, ERP Protheus, Power BI e SQL" />
+  <title>Portfólio Profissional | Matheus Rocha</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link href="script.js">
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-50 bg-gray-800 shadow-sm border-b border-gray-700">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">
+        MATHEUS <span class="highlight-green">ROCHA</span>
+      </h1>
+
+      <div class="flex items-center space-x-6">
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="#resumo" class="nav-link text-white">Resumo</a>
+            </li>
+            <li>
+              <a href="#experiencia" class="nav-link text-white">Experiência</a>
+            </li>
+            <li>
+              <a href="#formacao" class="nav-link text-white">Formação</a>
+            </li>
+            <li>
+              <a href="#competencias" class="nav-link text-white">Competências</a>
+            </li>
+            <li>
+              <a href="#idiomas" class="nav-link text-white">Idiomas</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none text-white">
+          <span class="material-icons text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="fixed inset-y-0 right-0 w-64 bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden border-l border-gray-700">
+      <div class="flex justify-end p-4">
+        <button id="menu-close" class="focus:outline-none text-white">
+          <span class="material-icons text-3xl">close</span>
+        </button>
+      </div>
+      <nav class="px-6 py-4">
+        <ul class="space-y-6">
+          <li>
+            <a href="#resumo" class="block text-lg font-medium text-white hover:text-green-400">Resumo</a>
+          </li>
+          <li>
+            <a href="#experiencia" class="block text-lg font-medium text-white hover:text-green-400">Experiência</a>
+          </li>
+          <li>
+            <a href="#formacao" class="block text-lg font-medium text-white hover:text-green-400">Formação</a>
+          </li>
+          <li>
+            <a href="#competencias" class="block text-lg font-medium text-white hover:text-green-400">Competências</a>
+          </li>
+          <li>
+            <a href="#idiomas" class="block text-lg font-medium text-white hover:text-green-400">Idiomas</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-r from-gray-800 to-gray-900">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0 animate-fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
+          Auxiliar Administrativo de Materiais <span class="highlight-green glow-on-hover">ERP Protheus</span> e <span
+            class="highlight-orange glow-on-hover">Power BI</span> em Foco
+        </h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Profissional com mais de 1 ano de experiência em gestão de estoque, controle de processos logísticos e análise
+          de dados. Especialista em otimizar operações, reduzir custos e garantir conformidade.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://api.whatsapp.com/send/?phone=92984822890&text&type=phone_number&app_absent=0"
+            class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105 animate-pulse"
+            target="_blank">Whatsapp</a>
+          <a href="curriculo_ATS.pdf" download="curriculo_ATS.pdf"
+            class="border border-gray-600 hover:border-green-500 text-white hover:text-green-500 px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105">Download
+            CV</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center animate-fade-in delay-200">
+        <div class="bg-gray-700 p-2 rounded-full shadow-xl">
+          <div
+            class="w-48 h-48 md:w-64 md:h-64 bg-gray-600 rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 animate-float">
+            <!-- Placeholder for profile image -->
+            <div class="w-full h-full relative bg-gray-700 rounded-full overflow-hidden">
+              <img src="perfil.jpg" alt="Foto de perfil" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumo Profissional -->
+  <section id="resumo" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">
+        Resumo <span class="highlight-green">Profissional</span>
+      </h2>
+
+      <div class="max-w-3xl mx-auto mb-12">
+        <p class="text-lg text-gray-300 text-center">
+          Auxiliar Administrativo de Materiais com 1+ ano de experiência em gestão de estoque, controle de processos
+          logísticos e análise de dados. Especialista em ERP Protheus, Power BI e SQL, com foco em otimizar operações,
+          reduzir custos e garantir conformidade. Destaques:
+        </p>
+        <ul class="list-disc list-inside text-gray-300 max-w-xl mx-auto mt-6 space-y-2">
+          <li>Redução de 7% nos custos operacionais através de análise de gargalos.</li>
+          <li>Aumento de 20% na precisão de previsões de demanda com modelagem de dados.</li>
+          <li>Domínio em relatórios gerenciais e colaboração multidisciplinar.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section id="experiencia" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">
+        Experiência <span class="highlight-green">Profissional</span>
+      </h2>
+
+      <div class="max-w-3xl mx-auto">
+        <!-- Timeline Item 1 -->
+        <div class="relative pl-12 pb-12 timeline-item animate-fade-in">
+          <div
+            class="absolute left-0 top-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center timeline-badge">
+            <span class="material-icons text-white">work</span>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl shadow-sm">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-semibold text-white">
+                Flex Industries
+              </h3>
+              <span class="text-gray-400">12/2023 – Atual</span>
+            </div>
+            <h4 class="text-lg font-medium mb-3 text-white">
+              Auxiliar Administrativo de Materiais B
+            </h4>
+            <p class="text-gray-300 mb-4">
+              Manaus/AM | Gestão de ERP Protheus, controle de materiais, produção e inventário.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start skill-item">
+                <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+                <span class="text-gray-300">Gestão de ERP Protheus: Controle de dados de materiais, produção e
+                  inventário, garantindo 100% de conformidade com normas internas.</span>
+              </li>
+              <li class="flex items-start skill-item">
+                <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+                <span class="text-gray-300">Otimização Logística: Implementação de ajustes em tempo real, reduzindo 15%
+                  no tempo de resposta para demandas críticas.</span>
+              </li>
+              <li class="flex items-start skill-item">
+                <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+                <span class="text-gray-300">Análise de Dados: Criação de dashboards em Power BI para monitorar métricas
+                  de eficiência operacional e estoque.</span>
+              </li>
+              <li class="flex items-start skill-item">
+                <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+                <span class="text-gray-300">Auditorias de Estoque: Realização de verificações mensais, diminuindo 25%
+                  das inconsistências em saldos.</span>
+              </li>
+              <li class="flex items-start skill-item">
+                <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+                <span class="text-gray-300">Colaboração Multissetorial: Mediação entre equipes técnicas e operacionais
+                  para alinhar prioridades e metas estratégicas.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formação -->
+  <section id="formacao" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">
+        Formação <span class="highlight-green">Acadêmica</span>
+      </h2>
+
+      <div class="max-w-3xl mx-auto">
+        <!-- Educação 1 -->
+        <div class="bg-gray-700 p-6 rounded-xl mb-6 animate-fade-in card-expand">
+          <div class="flex items-start">
+            <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mr-4 icon-bounce">
+              <span class="material-icons text-blue-400">school</span>
+            </div>
+            <div>
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h3 class="text-lg font-semibold text-white">
+                  Bacharelado em Engenharia de Software
+                </h3>
+                <span class="text-gray-400">Cursando (Previsão: 05/2028)</span>
+              </div>
+              <p class="text-gray-400 mb-2">
+                Centro Universitário Cidade Verde | Maringá/PR
+              </p>
+              <p class="text-gray-300">
+                <li> Engenharia de Software abrange o desenvolvimento, manutenção e
+                  gerenciamento de sistemas e aplicações de software com algoritmos,
+                  estruturas de dados, linguagens de programação, e práticas de
+                  engenharia, com foco em desenvolver soluções eficientes e inovadoras
+                  para problemas complexos.
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cursos -->
+        <div class="bg-gray-700 p-6 rounded-xl animate-fade-in delay-100 card-expand">
+          <h3 class="text-lg font-semibold mb-4 flex items-center text-white">
+            <span class="material-icons text-green-400 mr-2">menu_book</span>
+            Cursos Complementares
+          </h3>
+
+          <!-- Curso 1 -->
+          <div class="mb-4 pb-4 border-b border-gray-600">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h4 class="font-medium text-white">Chefia e Liderança</h4>
+              <span class="text-gray-400">Concluído em 01/2025</span>
+            </div>
+            <p class="text-gray-400 mb-1">FATEAM</p>
+            <p class="text-gray-300">
+              <li>
+                Desenvolvimento de habilidades essenciais em liderança, gestão de equipes,
+                comunicação assertiva, tomada de decisão estratégica e desenvolvimento de talentos.
+                Foco em práticas para motivação, engajamento e resolução de conflitos no ambiente profissional.</li>
+            </p>
+          </div>
+
+          <!-- Curso 2 -->
+          <div class="mb-4 pb-4 border-b border-gray-600">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h4 class="font-medium text-white">Informática Avançada (Excel, Word)</h4>
+              <span class="text-gray-400">Concluído em 06/2019</span>
+            </div>
+            <p class="text-gray-400 mb-1">Educamazon</p>
+            <p class="text-gray-300">
+              <li>
+                Curso abrangente em informática incluindo Excel, Word, ferramentas do Windows e hardware.</li>
+            </p>
+          </div>
+
+          <!-- Curso 3 -->
+          <div class="mb-4 pb-4 border-b border-gray-600">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h4 class="font-medium text-white">Análise de Dados</h4>
+              <span class="text-gray-400">Concluído em 06/2021</span>
+            </div>
+            <p class="text-gray-400 mb-1">Ebac Online</p>
+            <p class="text-gray-300">
+              <li>
+                Curso focado em fundamentos de análise de dados, incluindo coleta, processamento, visualização e
+                interpretação de dados com ferramentas como Python, SQL e Power BI. Desenvolvimento de habilidades em
+                estatística, machine learning básico e criação de dashboards para suporte à tomada de decisões.</li>
+            </p>
+          </div>
+
+          <!-- Curso 4 -->
+          <div class="mb-4 pb-4 border-b border-gray-600">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h4 class="font-medium text-white">Avaliação Estratégica da Qualidade</h4>
+              <span class="text-gray-400">Concluído em 01/2025</span>
+            </div>
+            <p class="text-gray-400 mb-1">UEA</p>
+            <p class="text-gray-300">
+              <li>
+                Este curso abrange os fundamentos da gestão da qualidade com foco estratégico, abordando:
+
+                Conceitos e evidências da qualidade como diferencial competitivo, alinhados aos objetivos
+                organizacionais.</li>
+
+              <li>Processos de avaliação da qualidade, desde a definição de critérios até a implementação de melhorias
+                contínuas.</li>
+
+              <li>Aplicação em bens tangíveis e serviços, com métodos específicos para mensurar e garantir padrões de
+                excelência.</li>
+
+              <li>Indicadores-chave (KPIs) de qualidade e produtividade, utilizando métricas para análise de desempenho
+                e
+                tomada de decisão.</li>
+
+              <li>Planejamento e controle de processos, com técnicas para otimização de fluxos, redução de falhas e
+                aumento
+                da eficiência operacional.</li>
+              <br>
+              Habilidades Desenvolvidas:
+              <br>✔ Análise crítica de qualidade sob perspectiva estratégica.
+              <br>✔ Domínio de ferramentas para avaliação e melhoria contínua.
+              <br>✔ Capacidade de traduzir dados de qualidade em ações competitivas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competências -->
+  <section id="competencias" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">
+        Minhas <span class="highlight-green">Competências</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Coluna 1 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-sm animate-fade-in card-expand">
+          <h3 class="text-xl font-semibold mb-4 flex items-center text-white">
+            <span class="material-icons text-blue-400 mr-2 icon-bounce">code</span>
+            Ferramentas
+          </h3>
+          <ul class="space-y-4">
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">ERP Protheus</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Power BI</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">SQL</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Excel Avançado</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Word</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-sm animate-fade-in delay-100 card-expand">
+          <h3 class="text-xl font-semibold mb-4 flex items-center text-white">
+            <span class="material-icons text-green-400 mr-2 icon-bounce">leaderboard</span>
+            Gestão
+          </h3>
+          <ul class="space-y-4">
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Controle de Estoque</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Logística</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Auditorias</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Processos Operacionais</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-sm animate-fade-in delay-200 card-expand">
+          <h3 class="text-xl font-semibold mb-4 flex items-center text-white">
+            <span class="material-icons text-orange-400 mr-2 icon-bounce">groups</span>
+            Soft Skills
+          </h3>
+          <ul class="space-y-4">
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Resolução de Problemas</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Comunicação Assertiva</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-300">Trabalho em Equipe</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Idiomas -->
+  <section id="idiomas" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">
+        Proficiência em <span class="highlight-green">Idiomas</span>
+      </h2>
+
+      <div class="bg-gray-700 p-6 rounded-xl animate-fade-in card-expand">
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium text-white">Português</span>
+            <span class="text-gray-300">Nativo</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--target-width: 100%" data-width="100"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium text-white">Inglês</span>
+            <span class="text-gray-300">Básico (Leitura e Compreensão)</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--target-width: 40%" data-width="40"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">
+        Entre em <span class="highlight-green">Contato</span>
+      </h2>
+
+      <div class="bg-gray-800 p-8 rounded-xl shadow-sm animate-fade-in card-expand">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-xl font-semibold mb-4 text-white">
+              Informações de Contato
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <a href="mailto:matheus.henri.rocha@gmail.com">
+                  <span class="material-icons text-green-400 mr-3 contact-icon">email</span>
+                  <span class="text-gray-300 hover-underline">matheus.henri.rocha@gmail.com</span></a>
+
+              </li>
+              <li class="flex items-start">
+                <a target="_blank"
+                  href="https://api.whatsapp.com/send/?phone=92984822890&text&type=phone_number&app_absent=0">
+                  <span class="material-icons text-green-400 mr-3 contact-icon">phone</span>
+                  <span class="text-gray-300 hover-underline">(92) 98482-2890</span></a>
+              </li>
+              <li class="flex items-start">
+                <span class="material-icons text-green-400 mr-3 contact-icon">location_on</span>
+                <span class="text-gray-300">Manaus/AM</span>
+              </li>
+              <li class="flex items-start">
+                <span class="material-icons text-green-400 mr-3 contact-icon">link</span>
+                <a href="https://www.linkedin.com/in/math-eng" target="_blank"
+                  class="text-gray-300 hover:text-green-400 hover-underline">linkedin.com/in/math-eng</a>
+              </li>
+            </ul>
+          </div>
+          <p id="form-status" class="mt-2 text-center text-white"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Floating Button -->
+  <a href="#" class="floating-btn">
+    <span class="material-icons">arrow_upward</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h2 class="text-xl font-bold">Matheus Rocha</h2>
+          <p class="text-gray-400">Auxiliar Administrativo de Materiais</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://linkedin.com/in/math-eng/" target="_blank"
+            class="hover:text-green-400 transition transform hover:scale-110">
+            <span class="material-icons">linkedin</span>
+          </a>
+          <a href="mailto:matheus.henri.rocha@gmail.com"
+            class="hover:text-green-400 transition transform hover:scale-110">
+            <span class="material-icons">email</span>
+          </a>
+          <a href="#resumo" class="hover:text-green-400 transition transform hover:scale-110">
+            <span class="material-icons">description</span>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+        <p>&copy; 2024 Matheus Rocha. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.add("menu-open");
+    });
+
+    menuClose.addEventListener("click", () => {
+      mobileMenu.classList.remove("menu-open");
+    });
+
+    // Close menu when clicking on a link
+    const menuLinks = document.querySelectorAll("#mobile-menu a");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("menu-open");
+      });
+    });
+
+    // Animate progress bars when scrolling to them
+    const progressBars = document.querySelectorAll(".progress-fill");
+
+    const animateOnScroll = () => {
+      progressBars.forEach((bar) => {
+        const barPosition = bar.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (barPosition < screenPosition) {
+          bar.classList.add("animate-fill");
+        }
+      });
+
+      // Animate competencies cards with bounce-in when in view
+      const competenciesCards = document.querySelectorAll("#competencias .card-expand");
+      competenciesCards.forEach((card, index) => {
+        const cardPosition = card.getBoundingClientRect().top;
+        if (cardPosition < screenPosition) {
+          card.classList.add("animate-bounce-in");
+          card.style.animationDelay = `${index * 0.15}s`;
+        }
+      });
+
+      // Animate headings with slide-in from left
+      const headings = document.querySelectorAll("#competencias h2, #idiomas h2");
+      headings.forEach((heading) => {
+        const headingPosition = heading.getBoundingClientRect().top;
+        if (headingPosition < screenPosition) {
+          heading.classList.add("animate-slide-in-left");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", animateOnScroll);
+
+    // Trigger animation on page load if element is already in view
+    document.addEventListener("DOMContentLoaded", () => {
+      animateOnScroll();
+
+      // Add fade-in animations to elements
+      const animateElements = document.querySelectorAll(".animate-fade-in");
+      animateElements.forEach((el, index) => {
+        el.style.animationDelay = `${index * 0.1}s`;
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+
+    // Floating button click handler
+    const floatingBtn = document.querySelector(".floating-btn");
+    floatingBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+
+    // Show/hide floating button based on scroll position
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        floatingBtn.style.display = "flex";
+      } else {
+        floatingBtn.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f2937; /* Dark background */
+    color: #e5e7eb; /* Light text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff; /* White headings */
+}
+
+a {
+    color: #3b82f6; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #34d399; /* Green on hover */
+}
+
+.highlight-green {
+    color: #34d399; /* Highlight green */
+}
+
+.highlight-orange {
+    color: #fb923c; /* Highlight orange */
+}
+
+.bg-gray-800 {
+    background-color: #2d3748; /* Dark gray background */
+}
+
+.bg-gray-900 {
+    background-color: #1a202c; /* Darker gray background */
+}
+
+.card-expand {
+    transition: transform 0.3s;
+}
+
+.card-expand:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.progress-bar {
+    background-color: #4b5563; /* Gray progress bar background */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: #34d399; /* Green progress fill */
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #34d399; /* Green button */
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #3b82f6; /* Blue on hover */
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+}
